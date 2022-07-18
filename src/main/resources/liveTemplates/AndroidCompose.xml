@@ -1,0 +1,9 @@
+<templateSet group="AndroidCompose">
+  <template name="newComposable" value="@Composable&#10;@OptIn(ExperimentalMaterial3Api::class)&#10;fun $VALUE$() {&#10;    Scaffold(&#10;        topBar = {&#10;            SmallTopAppBar(&#10;                title = { Text(&quot;$TITLE$&quot;) }&#10;            )&#10;        }&#10;    ) { padding -&gt;&#10;        $END$&#10;    }&#10;}" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN_TOPLEVEL" value="true" />
+    </context>
+  </template>
+</templateSet>
