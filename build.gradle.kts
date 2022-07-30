@@ -1,6 +1,6 @@
 plugins {
     id("java")
-    id("org.jetbrains.kotlin.jvm") version "1.6.20"
+    kotlin("jvm") version "1.6.20"
     id("org.jetbrains.intellij") version "1.5.2"
 }
 
@@ -11,12 +11,16 @@ repositories {
     mavenCentral()
 }
 
+dependencies {
+    compileOnly(kotlin("stdlib"))
+}
+
 // Configure Gradle IntelliJ Plugin - read more: https://github.com/JetBrains/gradle-intellij-plugin
 intellij {
     version.set("2021.2")
     type.set("IC") // Target IDE Platform
 
-    plugins.set(listOf(/* Plugin Dependencies */))
+    plugins.set(listOf("java", "Kotlin", "android"))
 }
 
 tasks {
