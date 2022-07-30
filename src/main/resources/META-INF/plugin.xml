@@ -26,5 +26,8 @@
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
         <defaultLiveTemplates file="liveTemplates/AndroidCompose.xml"/>
+
+        <localInspection language="kotlin" displayName="Example" groupName="Example" enabledByDefault="true"
+                         implementationClass="jp.cordea.intellijpluginplayground.CodeInspection"/>
     </extensions>
 </idea-plugin>
