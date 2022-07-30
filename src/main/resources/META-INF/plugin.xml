@@ -28,7 +28,7 @@
     <extensions defaultExtensionNs="com.intellij">
         <defaultLiveTemplates file="liveTemplates/AndroidCompose.xml"/>
 
-        <localInspection language="kotlin" displayName="Example" groupName="Example" enabledByDefault="true"
+        <localInspection language="kotlin" displayName="Avoid using Log" groupName="Log" enabledByDefault="true"
                          implementationClass="jp.cordea.intellijpluginplayground.CodeInspection"/>
     </extensions>
 </idea-plugin>
