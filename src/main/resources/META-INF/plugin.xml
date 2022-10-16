@@ -31,4 +31,13 @@
         <localInspection language="kotlin" displayName="Avoid using Log" groupName="Log" enabledByDefault="true"
                          implementationClass="jp.cordea.intellijpluginplayground.CodeInspection"/>
     </extensions>
+
+    <actions>
+        <action class="jp.cordea.intellijpluginplayground.PopupAction"
+                description="Description"
+                icon="AllIcons.Actions.ShowImportStatements">
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+            <override-text place="MainMenu" text="Popup"/>
+        </action>
+    </actions>
 </idea-plugin>
